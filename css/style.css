@@ -59,16 +59,15 @@ ul {
    padding-left: 15px;
    padding-right: 15px;
 }
-/*Шапка*/
+                                          /*Шапка*/
 
 .header {
    background-color: var(--background-section);
-}
-.box {
    border-bottom-color: #ececec;
    border-bottom-width: 1px;
    border-bottom-style: solid;
 }
+
 .head-conteiner {
    display: flex;
    padding-top: 25px;
@@ -83,6 +82,12 @@ ul {
 .site-nav {
    display: flex;
 }
+.site-nav::before{
+   content: '';
+
+   border-bottom: 4px solid var(--text-active);
+   border-radius: 2px;
+}
 
 .site-contacts {
    display: flex;
@@ -92,7 +97,16 @@ ul {
 .site-contacts-item:not(:last-child) {
    margin-right: 50px;
 }
-
+.site-nav-link.current::after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   background-color: var(--text-active);
+   border-bottom: 4px solid var(--text-active);
+   border-radius: 2px;
+   display: block;
+   bottom: -25px;
+}
 .logo {
    font-family: "Raleway";
    font-weight: 700;
@@ -112,6 +126,7 @@ ul {
    color: var(--text-header);
    padding-top: 10px;
    padding-bottom: 10px;
+   position: relative;
 }
 .site-nav-item:not(:last-child) {
    margin-right: 50px;
@@ -120,7 +135,9 @@ ul {
 .site-nav-link:hover,
 .site-nav-link:focus {
    color: var(--text-active);
-}
+   /* border-bottom: 4px solid var(--text-active);
+   border-radius: 2px;*/
+} 
 .contacts {
    display: flex;
    align-items: center;
