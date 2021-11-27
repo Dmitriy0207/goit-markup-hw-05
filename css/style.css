@@ -381,18 +381,18 @@ ul {
    position: absolute;
    bottom: 0;
    left: 0;
-   padding:27px 82px ;
+   text-transform: uppercase;
    font-style: 700;
-   font-style: 14px;
-   line-height: 1.1;
-   line-height: 100%;
-   letter-spacing: 3%;
-   vertical-align: top;
+   padding:27px 0 ; 
+   text-align: center;
    color: var(--background-section);
    width: 100%;
    background-color: rgba(47, 48, 58, 0.8);
    transform: translateY(100%);
-   transition: transform 400ms linear ;
+   transition: transform 250ms linear ; 
+   font-style: 14px;
+   line-height: 1.1; 
+   letter-spacing: 3%; 
 }
 
                                                       /*наша команда */
@@ -596,26 +596,24 @@ margin-right: 30px;
    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.works-item-wrap{
+.works-overlay{
    position: relative;
    overflow: hidden;
 }
 .works-item:hover .works-item-text{
    transform: translateY(0);
+
 }
 .works-item-text{
    position: absolute;
    top: 0;
-   left: 0;
    padding: 63px 24px;
-   width: 100%;
+   height: 100%;
    font-size: 18px;
-   line-height: 1.55px;
-   line-height: 133%;
-   vertical-align: Top;
+   line-height: 1.55;
    color: var(--background-section);
    background-color: rgb(33, 150, 243, 0.9);
    transform: translateY(100%);
-   transition: transform 400ms linear ;
+   transition: transform 250ms linear ;
 
 }
